@@ -52,11 +52,11 @@ Congrats!! You finally logged in remotely to the server.
 ## STEP 4: Trying some commands
 Now, you are ready play with some commands on the terminal.
 Type in something like
-1. cd
-2. ls
-3. pwd
-4. mkdir
-5. cp
+1. `cd`
+2. `ls`
+3. `pwd`
+4. `mkdir`
+5. `cp`
 ![image](https://user-images.githubusercontent.com/130010181/230694105-d34b1ec3-ad46-4e00-b825-00c9411c2ddb.png)
 You will see these after you try those commands.
 I will explain what each command means:
