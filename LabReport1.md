@@ -1,7 +1,7 @@
 # How to log into a course-specific account on ieng6 and how to download Visual Studio Code on your computer.
 ## STEP 1: Finding your CSE 15L account and resetting the password
 Find your CSE 15L account
-click this link: [Link](https://sdacs.ucsd.edu/~icc/index.php)
+click this [link](https://sdacs.ucsd.edu/~icc/index.php)
 When you open this link you will see something like below:
 ![image](https://user-images.githubusercontent.com/130010181/230690405-c8a8ad41-1453-47b6-bc6a-5fa82aeb8ef4.png)
 Type in your **UCSD username** for the username and **PID** for Student ID.
@@ -29,7 +29,7 @@ Click on **UC San Diego Password reset page**.
 Enter new password and confirm new password and then click **CHANGE PASSWORD**
 ## STEP 2: Downloading Visual Studio Code
 Now you are ready to download Visual Studio code.
-Click on this link: [Link](https://code.visualstudio.com/)
+Click on this [link](https://code.visualstudio.com/)
 ![image](https://user-images.githubusercontent.com/130010181/230691873-b1333877-1613-4596-86ce-cd894db55b0a.png)
 Click on **DOWNLOAD**.
 ![image](https://user-images.githubusercontent.com/130010181/230691901-51459cec-4a8c-47e1-9ec4-b72cb221d339.png)
