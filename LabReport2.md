@@ -83,7 +83,39 @@ I am going to test this input: {1, 2, 3, 4}.
   }
 ~~~
 ![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/e875a228-ceb2-4d70-8853-9bf8b27971de)
+Another failure-inducing input: {101, 201, 301, 401}.
+~~~
+ public void testReverseInplace3() {
+    int[] input3 = {101, 201, 301, 401}; 
+    ArrayExamples.reverseInPlace(input3);
+    assertArrayEquals(new int[] {401, 301, 201, 101 }, input3);
+  }
+~~~  
+![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/c11f378b-140c-47d4-994c-0332421c9015)
+Another failure-inducing input: {99, 97, 95, 93}
+~~~
+@Test
+  public void testReverseInplace4() {
+    int[] input4 = {99, 97, 95, 93}; 
+    ArrayExamples.reverseInPlace(input4);
+    assertArrayEquals(new int[] {93, 95, 97, 99}, input4);
+  }
+~~~
+![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/e728799c-334e-4eef-85d9-b39981301873)
 
-3. An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
-4. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-5. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+2. An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+
+An input that does not induce a failure: { 3,3,3 }
+~~~
+@Test 
+	public void testReverseInPlace() {
+    int[] input1 = {3,3,3};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{3,3,3}, input1);
+	}
+~~~
+![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/78467f0d-a6b2-4a33-ac3b-976ba6c9b7ca)
+You can see from the screenshot above the test is smoothly passed, and there is no problem with it. This is because an input with the same number inside will not cause any problems within the test.
+
+3. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+4. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
