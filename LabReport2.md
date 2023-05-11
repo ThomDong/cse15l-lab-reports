@@ -157,7 +157,7 @@ In the code before, the for loop iterates over the entire array, resulting in ov
 
 # PART 3
 What I leared from labs in week 2 or week 3
-From week 2 lab, I learned how to get the code from my GitHub repository onto Visual Studio Code. I feel like this skill is really essential. I learned how to use GitHub Desktop. In week 3 lab, I learned how to compile and run java programs on the terminal of Visual Studio Code. I also realized that MAC and WINDOW have different commands format to compile and run java programs on the terminal
+From week 2 lab, I learned how to get the code from my GitHub repository onto Visual Studio Code. I feel like this skill is really essential. I learned how to use GitHub Desktop. In week 3 lab, I learned how to compile and run java programs on the terminal of Visual Studio Code. I also realized that MAC and WINDOW have different commands format to compile and run java programs on the terminal. Especially, week 2 lab was really interesting because I leanred how to modifty the web page with different queries in the url, using the java program.
 
 
 
