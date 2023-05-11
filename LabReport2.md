@@ -50,7 +50,7 @@ Now, let's run this thing. Type in on your terminal
 java StringServer 4200
 ~~~
 ![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/c099052e-1dfd-4a3e-83f0-feedd73e5731)
-You will not get a link on your terminal.
+
 
 After running StringServer with port number 4200, you will see the link below.
 http://localhost:4200
@@ -72,7 +72,7 @@ Then you will something like below.
 In the screenshot above, main() method is called in order for the command line arguments to work. HandleRequest() method is also being called to pass the request to the URI. Specifically in this scenario, the request add-message/?s=Wassup is being processed to handle the specific request.The relevant arguments and the values of any relevant fileds of the class for the main() method is args array (command line arguments), port (port number). The relevant arguments and the values of any relevant fields of the class to handleRequest() method is url, str, and parameters array. The relevant field that is changed is the str. Specifically, from this request str value is "How are you\n + wassup".
 # PART 2
 Okay, now I am going to choose a program that has some bugs. I chose reverseInPlace from ArrayExamples.java
-1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown
+## 1. A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown ##
 I am going to test this input: {1, 2, 3, 4}.
 ~~~
 @Test
@@ -104,7 +104,7 @@ Another failure-inducing input: {99, 97, 95, 93}
 ~~~
 ![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/e728799c-334e-4eef-85d9-b39981301873)
 
-2. An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+## 2. An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown) ##
 
 An input that does not induce a failure: { 3,3,3 }
 ~~~
@@ -118,17 +118,18 @@ An input that does not induce a failure: { 3,3,3 }
 ![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/78467f0d-a6b2-4a33-ac3b-976ba6c9b7ca)
 You can see from the screenshot above the test is smoothly passed, and there is no problem with it. This is because an input with the same number inside will not cause any problems within the test.
 
-3. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-screenshots
+## 3. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above) ##
 
-a.
+
+
+SCREENSHOT A.
 ![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/53ea7b1a-c536-46f9-87ea-1afebff31f40)
-b.
+SCREENSHOT B.
 ![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/e1b0c4b1-d613-4142-96cf-535bbcef8347)
 Alright now, let us look at the first and second example. There are four elements total. These are [0],[1],[2],and [3]. From the input, our goal is to have them flipped. So, if input is [0],[1],[2],and [3], then the output should be [3],[2],[1],and [0]. However, both examples show that there was  a problem with the flipped output at element [2]. It is supposed to have element [1] of the original input at the element [2] of the output. Instead. the element [2] of the output is having [2] of the input. The element [1] of the output is equal to the element [2] of the input as it should be. However, the symptom here in both examples is that element [1] of the input is being overwritten at the element [2] of the output when element [2] of the ouput should be euqal to the element [1] of the input.
 
 
-4. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+## 4. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown) ##
 
 Before:
 
