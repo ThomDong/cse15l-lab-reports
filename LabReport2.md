@@ -85,6 +85,7 @@ I am going to test this input: {1, 2, 3, 4}.
 ![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/e875a228-ceb2-4d70-8853-9bf8b27971de)
 Another failure-inducing input: {101, 201, 301, 401}.
 ~~~
+ @Test
  public void testReverseInplace3() {
     int[] input3 = {101, 201, 301, 401}; 
     ArrayExamples.reverseInPlace(input3);
@@ -118,4 +119,45 @@ An input that does not induce a failure: { 3,3,3 }
 You can see from the screenshot above the test is smoothly passed, and there is no problem with it. This is because an input with the same number inside will not cause any problems within the test.
 
 3. The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
+screenshots
+
+a.
+![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/53ea7b1a-c536-46f9-87ea-1afebff31f40)
+b.
+![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/e1b0c4b1-d613-4142-96cf-535bbcef8347)
+Alright now, let us look at the first and second example. There are four elements total. These are [0],[1],[2],and [3]. From the input, our goal is to have them flipped. So, if input is [0],[1],[2],and [3], then the output should be [3],[2],[1],and [0]. However, both examples show that there was  a problem with the flipped output at element [2]. It is supposed to have element [1] of the original input at the element [2] of the output. Instead. the element [2] of the output is having [2] of the input. The element [1] of the output is equal to the element [2] of the input as it should be. However, the symptom here in both examples is that element [1] of the input is being overwritten at the element [2] of the output when element [2] of the ouput should be euqal to the element [1] of the input.
+
+
 4. The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
+
+Before:
+
+~~~
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+~~~
+
+After:
+
+~~~
+for(int i = 0; i < arr.length/2; i += 1) {
+      int temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+    }
+  }
+~~~
+
+Brief Description:
+
+In the code before, the for loop iterates over the entire array, resulting in overwriting. It does not correctly update the newly created reversed array. Change from "for(int i = 0; i < arr.length; i += 1)" to "for(int i = 0; i < arr.length/2; i += 1)" is to ensure that the for loop iterates until the half length of the array in order to update the elements of the new array correctly. We don't want any overwriting. In order to avoid overwriting, we would need a temporary variable that can hold arr[i]. Then arr[i] also has to hold arr[arr.length - i - 1] in order to correctly update the value of index[i] with values from index[arr.length - i - 1]. Then,arr[arr.length - i - 1] equals temp to correctly update the value of temp.
+
+# PART 3
+What I leared from labs in week 2 or week 3
+From week 2 lab, I learned how to get the code from my GitHub repository onto Visual Studio Code. I feel like this skill is really essential. I learned how to use GitHub Desktop. In week 3 lab, I learned how to compile and run java programs on the terminal of Visual Studio Code. I also realized that MAC and WINDOW have different commands format to compile and run java programs on the terminal
+
+
+
