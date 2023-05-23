@@ -6,6 +6,7 @@ To log into ieng6, I typed in
 ~~~
 ssh cs15lsp23rh@ieng6.ucsd.edu
 ~~~
+The image above shows what has to be displayed after you log into ieng6.
 For you, the two letters rh are different. I did not need to type in any passwords as I generated SSH Keys for ieng6.
 
 ## Step 5: Cloning my fork of the repository from my Github account
