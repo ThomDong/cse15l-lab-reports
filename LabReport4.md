@@ -99,7 +99,7 @@ git add .
 This will add changes to all files by typing in '.'
 By typing in
 ~~~
-git  status
+git status
 ~~~
 ![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/0b7ec9ac-8555-437a-afb8-03cd34a0d274)
 You will see something like above. You can see that ListExamples.java was modified.
