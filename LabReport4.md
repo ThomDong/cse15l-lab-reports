@@ -88,11 +88,32 @@ bash test.sh
 ~~~
 ![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/adfc4c4d-5e91-4c18-9c53-890700e35890)
 As you see above in the terminal, unlike before, now all the tests are OK. They succeeded.
+## Step 9: Commit and push the resulting changes to my GitHub account
 
+After generating SSH Keys for GitHub during lab time, I can now commit and push the changes using SSH. To do this, I typed in
 
-
-
-
+~~~
+git add .
+~~~
+This will add changes to all files by typing in '.'
+By typing in
+~~~
+git  status
+~~~
+![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/0b7ec9ac-8555-437a-afb8-03cd34a0d274)
+You will see something like above. You can see that ListExamples.java was modified.
+Now, type in 
+~~~
+git commit -m "fixed tests"
+~~~
+![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/d21f0965-e76a-4813-97c0-837fe72c8fb4)
+Now, you will see something like above. You can see that there was 1 insertion and 1 deletion. When I committed, I chose the commit message to be "fixed tests" 
+Now, type in 
+~~~
+git push
+~~~
+![image](https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/73c341ba-627d-48eb-8538-c277766e8587)
+From above, now, you see that changes were added, committed, and pushed.
 
 
 
