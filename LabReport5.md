@@ -1,7 +1,7 @@
 # Lab Report 5
 ## Part 1 – Debugging Scenario
 
-### 1. Student's question and TA's response
+### 1. Student's Question and TA's Response
 
 Donghyun Hahn:
 
@@ -24,7 +24,7 @@ Detail the failure-inducing input and context. That might mean any or all of the
 
 This failure happened when I tried to run the test.sh file on my terminal. I tried to run this file to see if everything works fine. I logged into my ssh CSE15L account. The working directory is  `/home/linux/ieng6/cs15lsp23/cs15lsp23rh/lab7`.
 
-TA's response:
+TA's Response:
 
 Hey Donghyun!
 Firstly, make sure that your current working directory is `/home/linux/ieng6/cs15lsp23/cs15lsp23rh/lab7`. You can check this by typing in `pwd`. Secondly, from the debugger's message: 
@@ -35,7 +35,7 @@ Why don't you open `ListExamplesTests.java` and try to find where the bug is cau
 
 
 ### 2. Student's Response:
-Donghyun Hahn
+Donghyun Hahn:
 
 
 <img width="235" alt="image" src="https://github.com/ThomDong/cse15l-lab-reports/assets/130010181/e6d84d46-9f87-448b-880a-73003b30b62d">
@@ -54,7 +54,7 @@ From looking at this java file, I realized that the bug was caused by ":" after 
 
 Now, the two tests did not have any problems. Thank you for the help. It was relatively an easy fix, but it took long time for me to figure out.
 
-### 3. All the information needed about the setup:
+### 3. All the Information Needed about the Setup:
 
 Here are all the files structure under `/home/linux/ieng6/cs15lsp23/cs15lsp23rh/lab7`:
 
